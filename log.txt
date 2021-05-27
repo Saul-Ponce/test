@@ -1,2 +1,6 @@
 
  
+SequelizeEagerLoadingError: telefono is associated to usuario using an alias. You must use the 'as' keyword to specify the alias within your include statement. 
+ 
+SequelizeEagerLoadingError: telefono is associated to usuario using an alias. You must use the 'as' keyword to specify the alias within your include statement. 
+ 
