@@ -1,5 +1,7 @@
 require('dotenv').config()
 const express = require('express')
+const fs = require('fs')
+
 const db = require('./db/db')
 require('./db/relaciones')
 const app = express()
@@ -13,6 +15,7 @@ app.listen(port, async () => {
         await db.sync({ force: false })
         console.log('Server iniciado')
     } catch (error) {
+        fs.appendFileSync('log.txt', `${error} \n \n`)
         console.log(error);
     }
 })
